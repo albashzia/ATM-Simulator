@@ -6,6 +6,11 @@ while(attempts < 3):
     entered_pin = int(input("Enter your pin: "))
     if(entered_pin == pin):
         print("Choose the operation to perform")
+        print("1. Check Balance")
+        print("2. Deposit Money")
+        print("3. Withdraw Money")
+        print("4. Change PIN")
+        print("5. Exit")
         break;
     else:
         attempts = attempts + 1
