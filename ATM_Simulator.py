@@ -12,6 +12,8 @@ while(attempts < 3):
         print("4. Change PIN")
         print("5. Exit")
         choice = int(input("Enter your choice: "))
+        if choice == 1:
+            print("Your balance is",balance)
         break;
     else:
         attempts = attempts + 1
