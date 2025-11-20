@@ -8,5 +8,8 @@ while(attempts < 3):
         print("Choose the operation to perform")
         break;
     else:
-        print("Wrong pin, enter your pin again")
         attempts = attempts + 1
+        if(attempts == 3):
+            print("Account locked due to too many login attempts")
+            break;
+        print("Wrong pin, enter your pin again")  
