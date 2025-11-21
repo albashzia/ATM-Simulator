@@ -45,3 +45,12 @@ ATM Simulator – Overall Working Flow
             The amount is subtracted from the balance
             The new balance is displayed
         Control returns to the main menu.
+
+    Option 4 – Change PIN
+        The system asks the user to enter the current PIN.  
+        If the entered PIN is correct:
+            The system requests a new PIN
+            The stored PIN value is updated
+            A confirmation message is shown
+        If the old PIN is incorrect, the update is not performed.
+        Control returns to the main menu.
