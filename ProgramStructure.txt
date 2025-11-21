@@ -25,3 +25,7 @@ ATM Simulator – Overall Working Flow
             Change PIN
             Exit
         The user selects an option, and the system performs the appropriate action.
+
+    Option 1 – Check Balance
+        The current account balance is displayed.
+        Control returns to the main menu.
