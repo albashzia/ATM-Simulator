@@ -1,0 +1,7 @@
+ATM Simulator – Overall Working Flow
+
+    Program Start
+        The program begins by initializing the required variables:
+            balance is set to 0
+            storedPIN is preset to 1234
+            attempts counter is set to 0

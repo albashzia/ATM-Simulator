@@ -14,7 +14,7 @@ while(attempts < 3):
         choice = int(input("Enter your choice: "))
         if choice == 1:
             print("Your balance is",balance)
-        break;
+        break;   
     else:
         attempts = attempts + 1
         if(attempts == 3):
