@@ -5,3 +5,14 @@ ATM Simulator – Overall Working Flow
             balance is set to 0
             storedPIN is preset to 1234
             attempts counter is set to 0
+
+    Login Phase
+        The system enters a login loop to verify the user’s identity.
+        The user is prompted to enter their PIN.
+        The entered PIN is checked:
+            If the PIN is correct, the user is granted access to the main menu.
+            If the PIN is incorrect, the attempts counter increases by 1.
+                If the number of failed attempts reaches 3, the system:
+                    Displays an “Account Locked” message
+                    Terminates the program
+        If the user enters the correct PIN before running out of attempts, the program proceeds to the menu.
