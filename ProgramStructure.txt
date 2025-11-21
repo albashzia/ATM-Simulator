@@ -16,3 +16,12 @@ ATM Simulator – Overall Working Flow
                     Displays an “Account Locked” message
                     Terminates the program
         If the user enters the correct PIN before running out of attempts, the program proceeds to the menu.
+
+    Main Menu Loop
+        Once logged in successfully, the user is repeatedly shown the following options:
+            Check Balance
+            Deposit Money
+            Withdraw Money
+            Change PIN
+            Exit
+        The user selects an option, and the system performs the appropriate action.
