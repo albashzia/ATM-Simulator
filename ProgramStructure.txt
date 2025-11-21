@@ -35,3 +35,13 @@ ATM Simulator – Overall Working Flow
         The entered amount is added to the balance.
         The updated balance is displayed.
         Control returns to the main menu.
+
+    Option 3 – Withdraw
+        The user is prompted to enter the withdrawal amount.
+        If the requested amount is greater than the current balance:
+            The system displays “Insufficient Funds”
+            No deduction is made
+        Otherwise:
+            The amount is subtracted from the balance
+            The new balance is displayed
+        Control returns to the main menu.
