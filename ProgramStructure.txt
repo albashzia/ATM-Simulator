@@ -29,3 +29,9 @@ ATM Simulator – Overall Working Flow
     Option 1 – Check Balance
         The current account balance is displayed.
         Control returns to the main menu.
+
+    Option 2 – Deposit
+        The system asks the user to enter the deposit amount.
+        The entered amount is added to the balance.
+        The updated balance is displayed.
+        Control returns to the main menu.
