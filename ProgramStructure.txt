@@ -54,3 +54,11 @@ ATM Simulator – Overall Working Flow
             A confirmation message is shown
         If the old PIN is incorrect, the update is not performed.
         Control returns to the main menu.
+
+    Option 5 – Exit
+        When the user selects to exit:
+            The program displays a final summary containing:
+                The final balance
+                Deposit/withdrawal record (if maintained)
+                A closing thank-you message
+            After displaying the receipt, the program ends.
