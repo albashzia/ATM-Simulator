@@ -16,10 +16,15 @@ while(attempts < 3):
             print("Your balance is",balance)
         break;
         if choice == 2:
-            deposit_amount = int(input("Enter the amount to deposit: "))   
+            deposit_amount = int(input("Enter the amount to deposit: "))  
+            deposit(deposit_amount) 
     else:
         attempts = attempts + 1
         if(attempts == 3):
             print("Account locked due to too many login attempts")
             break;
         print("Wrong pin, enter your pin again")  
+
+
+def deposit(a):
+    balance = balance + a
