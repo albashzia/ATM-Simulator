@@ -52,6 +52,8 @@ while(attempts < 3):
                     print("Incorrect Pin Entered")
             elif choice == 5:
                 break
+            break
+        break
 
     else:
         attempts = attempts + 1
