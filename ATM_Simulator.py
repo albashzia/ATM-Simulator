@@ -48,6 +48,8 @@ while(attempts < 3):
                 change_pin(new_pin)
             else:
                 print("Incorrect Pin Entered")
+        if choice == 5:
+            break
 
     else:
         attempts = attempts + 1
