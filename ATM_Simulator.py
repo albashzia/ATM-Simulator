@@ -32,6 +32,9 @@ while(attempts < 3):
         if choice == 2:
             deposit_amount = int(input("Enter the amount to deposit: "))  
             deposit(deposit_amount)
+        if choice == 3:
+            withdraw_amount = int(input("Enter the amount to withdraw: "))
+            withdraw(withdraw_amount)
     else:
         attempts = attempts + 1
         if(attempts == 3):
