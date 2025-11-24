@@ -46,7 +46,8 @@ while(attempts < 3):
             if(current_pin==pin):
                 new_pin = int(input("Enter the new pin: "))
                 change_pin(new_pin)
-
+            else:
+                print("Incorrect Pin Entered")
 
     else:
         attempts = attempts + 1
