@@ -18,6 +18,11 @@ def withdraw(a):
     else:
         print("Insufficient Funds")
 
+def change_pin(a):
+    global pin
+    pin = a
+    print("Pin Successfully changed")
+
 while(attempts < 3):
     entered_pin = int(input("Enter your pin: "))
     if(entered_pin == pin):
@@ -39,7 +44,9 @@ while(attempts < 3):
         if choice == 4:
             current_pin = int(input("Enter your current pin: "))
             if(current_pin==pin):
-                
+                new_pin = int(input("Enter the new pin: "))
+                change_pin(new_pin)
+
 
     else:
         attempts = attempts + 1
