@@ -14,7 +14,7 @@ def withdraw(a):
     if(a<balance):
         balance = balance - a
         print("Withdraw Successful\nNew Balance is",balance)
-    else
+    else:
         print("Insufficient Funds")
 
 while(attempts < 3):
