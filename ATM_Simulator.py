@@ -2,6 +2,7 @@ print("Welcome to ATM-Simulator")
 pin = 1234
 balance = 1000
 attempts = 0
+choice = 0
 def check_balance():
     print(balance)
 
@@ -26,30 +27,31 @@ def change_pin(a):
 while(attempts < 3):
     entered_pin = int(input("Enter your pin: "))
     if(entered_pin == pin):
-        print("Choose the operation to perform")
-        print("1. Check Balance")
-        print("2. Deposit Money")
-        print("3. Withdraw Money")
-        print("4. Change PIN")
-        print("5. Exit")
-        choice = int(input("Enter your choice: "))
-        if choice == 1:
-            check_balance()
-        if choice == 2:
-            deposit_amount = int(input("Enter the amount to deposit: "))  
-            deposit(deposit_amount)
-        if choice == 3:
-            withdraw_amount = int(input("Enter the amount to withdraw: "))
-            withdraw(withdraw_amount)
-        if choice == 4:
-            current_pin = int(input("Enter your current pin: "))
-            if(current_pin==pin):
-                new_pin = int(input("Enter the new pin: "))
-                change_pin(new_pin)
-            else:
-                print("Incorrect Pin Entered")
-        if choice == 5:
-            break
+        while (choice != 5):
+            print("Choose the operation to perform")
+            print("1. Check Balance")
+            print("2. Deposit Money")
+            print("3. Withdraw Money")
+            print("4. Change PIN")
+            print("5. Exit")
+            choice = int(input("Enter your choice: "))
+            if choice == 1:
+                check_balance()
+            if choice == 2:
+                deposit_amount = int(input("Enter the amount to deposit: "))  
+                deposit(deposit_amount)
+            if choice == 3:
+                withdraw_amount = int(input("Enter the amount to withdraw: "))
+                withdraw(withdraw_amount)
+            if choice == 4:
+                current_pin = int(input("Enter your current pin: "))
+                if(current_pin==pin):
+                    new_pin = int(input("Enter the new pin: "))
+                    change_pin(new_pin)
+                else:
+                    print("Incorrect Pin Entered")
+            if choice == 5:
+                break
 
     else:
         attempts = attempts + 1
