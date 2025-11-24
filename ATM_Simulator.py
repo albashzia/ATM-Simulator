@@ -37,20 +37,20 @@ while(attempts < 3):
             choice = int(input("Enter your choice: "))
             if choice == 1:
                 check_balance()
-            if choice == 2:
+            elif choice == 2:
                 deposit_amount = int(input("Enter the amount to deposit: "))  
                 deposit(deposit_amount)
-            if choice == 3:
+            elif choice == 3:
                 withdraw_amount = int(input("Enter the amount to withdraw: "))
                 withdraw(withdraw_amount)
-            if choice == 4:
+            elif choice == 4:
                 current_pin = int(input("Enter your current pin: "))
                 if(current_pin==pin):
                     new_pin = int(input("Enter the new pin: "))
                     change_pin(new_pin)
                 else:
                     print("Incorrect Pin Entered")
-            if choice == 5:
+            elif choice == 5:
                 break
 
     else:
