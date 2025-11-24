@@ -11,6 +11,7 @@ def deposit(a):
     return balance
 
 def withdraw(a):
+    global balance
     if(a<balance):
         balance = balance - a
         print("Withdraw Successful\nNew Balance is",balance)
