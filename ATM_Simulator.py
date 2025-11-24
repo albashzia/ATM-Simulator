@@ -3,8 +3,8 @@ pin = 1234
 balance = 1000
 attempts = 0
 def check_balance():
-    print balance
-    
+    print(balance)
+
 def deposit(a):
     global balance
     balance = balance + a
