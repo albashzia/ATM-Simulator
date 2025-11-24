@@ -10,6 +10,13 @@ def deposit(a):
     balance = balance + a
     return balance
 
+def withdraw(a):
+    if(a<balance):
+        balance = balance - a
+        print("Withdraw Successful\nNew Balance is",balance)
+    else
+        print("Insufficient Funds")
+
 while(attempts < 3):
     entered_pin = int(input("Enter your pin: "))
     if(entered_pin == pin):
