@@ -36,6 +36,9 @@ while(attempts < 3):
         if choice == 3:
             withdraw_amount = int(input("Enter the amount to withdraw: "))
             withdraw(withdraw_amount)
+        if choice == 4:
+            current_pin = int(input("Enter your current pin: "))
+            
     else:
         attempts = attempts + 1
         if(attempts == 3):
