@@ -9,6 +9,7 @@ def check_balance():
 def deposit(a):
     global balance
     balance = balance + a
+    print("Deposit Successful")
     return balance
 
 def withdraw(a):
