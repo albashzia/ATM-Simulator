@@ -52,7 +52,6 @@ while(attempts < 3):
                     print("Incorrect Pin Entered")
             elif choice == 5:
                 break
-            break
         break
 
     else:
@@ -61,3 +60,4 @@ while(attempts < 3):
             print("Account locked due to too many login attempts")
             break;
         print("Wrong pin, enter your pin again")  
+        
