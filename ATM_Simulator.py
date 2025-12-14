@@ -1,6 +1,6 @@
 #basic level ATM simulator program
 print("Welcome to ATM-Simulator")
-pin = 1234
+pin = 1234 #defining default pin
 balance = 1000
 attempts = 0
 choice = 0
