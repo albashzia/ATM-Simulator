@@ -1,7 +1,7 @@
 #basic level ATM simulator program
 print("Welcome to ATM-Simulator")
 pin = 1234 #defining default pin
-balance = 1000
+balance = 1000 # defining default balance
 attempts = 0
 choice = 0
 def check_balance():
