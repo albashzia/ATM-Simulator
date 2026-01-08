@@ -2,17 +2,21 @@
 print("Welcome to ATM-Simulator")
 pin = 1234 #defining default pin
 balance = 1000 # defining default balance
-attempts = 0
-choice = 0
+attempts = 0 # setting a counter for attempts
+choice = 0 # initializing the choice to be 0 
+
+# creating a function to check balance
 def check_balance():
     print(balance)
 
+# a function to deposit money
 def deposit(a):
     global balance
     balance = balance + a
     print("Deposit Successful")
     return balance
 
+# function to withdraw money 
 def withdraw(a):
     global balance
     if(a<balance):
@@ -21,6 +25,7 @@ def withdraw(a):
     else:
         print("Insufficient Funds")
 
+# function to change pin 
 def change_pin(a):
     global pin
     pin = a
