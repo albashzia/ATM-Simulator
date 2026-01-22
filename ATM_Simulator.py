@@ -31,17 +31,18 @@ def change_pin(a):
     pin = a
     print("Pin Successfully changed")
 
-while(attempts < 3):
-    entered_pin = int(input("Enter your pin: "))
-    if(entered_pin == pin):
-        while (choice != 5):
+while(attempts < 3): # specifying the number of attempts a user can make
+    entered_pin = int(input("Enter your pin: ")) # taking pin from the user as input 
+    if(entered_pin == pin): # validating the pin 
+        while (choice != 5): 
+            # displaying the menu
             print("Choose the operation to perform")
             print("1. Check Balance")
             print("2. Deposit Money")
             print("3. Withdraw Money")
             print("4. Change PIN")
             print("5. Exit")
-            choice = int(input("Enter your choice: "))
+            choice = int(input("Enter your choice: ")) # taking user's choice
             if choice == 1:
                 check_balance()
             elif choice == 2:
