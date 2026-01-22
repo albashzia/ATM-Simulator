@@ -44,13 +44,13 @@ while(attempts < 3): # specifying the number of attempts a user can make
             print("5. Exit")
             choice = int(input("Enter your choice: ")) # taking user's choice
             if choice == 1:
-                check_balance()
+                check_balance() # call to function 
             elif choice == 2:
-                deposit_amount = int(input("Enter the amount to deposit: "))  
-                deposit(deposit_amount)
+                deposit_amount = int(input("Enter the amount to deposit: "))  # taking amount from user to deposit
+                deposit(deposit_amount) # calling deposit function
             elif choice == 3:
-                withdraw_amount = int(input("Enter the amount to withdraw: "))
-                withdraw(withdraw_amount)
+                withdraw_amount = int(input("Enter the amount to withdraw: ")) # taking amount to be withdrew
+                withdraw(withdraw_amount) # calling withdraw function
             elif choice == 4:
                 current_pin = int(input("Enter your current pin: "))
                 if(current_pin==pin):
